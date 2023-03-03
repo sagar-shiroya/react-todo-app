@@ -48,6 +48,9 @@ function App() {
           );
         })}
       </div>
+      <div className="footer">
+        <span>©Sagar Shiroya</span>
+      </div>
     </div>
   );
 }
