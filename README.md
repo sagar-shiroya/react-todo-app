@@ -10,6 +10,9 @@ Below concepts has been used while building this app:
 - Rendering Elements
 - Function based component
 - State Management
+- Custom CSS
+- Arrow Functions
+- Filter Function
 
 ## Demo
 
