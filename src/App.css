@@ -1,10 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lightcyan;
+}
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1{
+  margin: 50px 0 25px 0;
+  font-size: 50px;
+  font-weight: 400;
+  color: rgb(98, 99, 99);
+}
+
+.App.addTask{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addTask input{
+  padding: 25px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+.addTask button{
+  margin-left: 55px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  background: black;
+  color: whitesmoke;
+  cursor: pointer;
+
+}
+
+.listTask{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1.5px solid rgb(30, 201, 217);
+  padding: 15px 45px;
+}
+
+.task h2{
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.task button{
+  border-style: none;
+  font-size: 25px;
+  cursor: pointer;
+  width: fit-content;
+  color: red;
+  font-weight: 600;
+  padding: 0 25px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +92,15 @@
 
 .App-link {
   color: #61dafb;
+}
+
+li{
+  list-style: none;
+  font-size:25px;
+}
+
+.task button{
+  margin-left: 15px;
 }
 
 @keyframes App-logo-spin {
