@@ -4,11 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: lightcyan;
+  background-color: #9feaff;
 }
-body{
-  
-}
+
 .App {
   text-align: center;
   min-height: 100vh;
@@ -19,8 +17,9 @@ body{
 .App h1{
   margin: 50px 0 25px 0;
   font-size: 50px;
-  font-weight: 400;
-  color: rgb(98, 99, 99);
+  font-weight: 500;
+  color: #067290;
+  text-transform: uppercase;
 }
 
 .App.addTask{
@@ -28,22 +27,34 @@ body{
   align-items: center;
   justify-content: center;
 }
+input:focus{
+  outline: none;
+}
 
-.addTask input{
+.addTask input {
   padding: 25px;
-  font-size: 25px;
+  font-size: 30px;
   border-radius: 15px;
+  color: #fff;
+  background: linear-gradient(to right, #4d7986, #2f768a,#016c8a);
+  border: none;
+}
+
+::placeholder{
+  color: #fff;
 }
 
 .addTask button{
   margin-left: 55px;
-  padding: 15px;
-  font-size: 20px;
+  padding: 20px;
+  font-size: 25px;
   border-radius: 15px;
-  background: black;
-  color: whitesmoke;
+  background: linear-gradient(to right, #4d7986, #2f768a,#016c8a);
+  color: #fff;
   cursor: pointer;
-
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
 }
 
 .listTask{
@@ -58,27 +69,32 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1.5px solid rgb(30, 201, 217);
+  /* border-bottom: 1.5px solid rgb(30, 201, 217); */
   padding: 15px 45px;
 }
 
 .task h2{
   font-size: 35px;
-  font-weight: 300;
+  font-weight: 400;
+  background: linear-gradient(to right, #4d7986, #2f768a,#016c8a);
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #fff;
 }
 
 .task button{
   border-style: none;
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
   width: fit-content;
-  color: red;
-  font-weight: 600;
+  color: #016c8a;
+  font-weight: 800;
   padding: 0 25px;
 }
 
 .footer{
   margin-top: auto;
+  color:#067290;
 }
 
 @media (prefers-reduced-motion: no-preference) {
