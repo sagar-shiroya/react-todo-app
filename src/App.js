@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Task } from "./Task";
+import { Footer } from "./Footer";
 
 function App() {
   const [todoList, setTodoList] = useState([]);
@@ -51,9 +52,7 @@ function App() {
           );
         })}
       </div>
-      <div className="footer">
-        <span>©Sagar Shiroya</span>
-      </div>
+      <Footer />
     </div>
   );
 }
