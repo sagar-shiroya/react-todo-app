@@ -15,8 +15,8 @@
 }
 
 .App h1{
-  margin: 50px 0 25px 0;
-  font-size: 50px;
+  margin: 25px 0 25px 0;
+  font-size: 45px;
   font-weight: 500;
   color: #067290;
   text-transform: uppercase;
@@ -33,7 +33,7 @@ input:focus{
 
 .addTask input {
   padding: 25px;
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 15px;
   color: #fff;
   background: linear-gradient(to right, #4d7986, #2f768a,#016c8a);
@@ -47,7 +47,7 @@ input:focus{
 .addTask button{
   margin-left: 55px;
   padding: 20px;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 15px;
   background: linear-gradient(to right, #4d7986, #2f768a,#016c8a);
   color: #fff;
@@ -74,7 +74,7 @@ input:focus{
 }
 
 .task h2{
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 400;
   background: linear-gradient(to right, #4d7986, #2f768a,#016c8a);
   padding: 10px 25px;
