@@ -16,5 +16,6 @@ Below concepts has been used while building this app:
 
 ## Demo
 
-![image](https://user-images.githubusercontent.com/14357087/223049794-10f97692-e94e-45a2-a2f9-c3fd8019ffe7.png)
+![image](https://user-images.githubusercontent.com/14357087/223050876-08b9067b-3876-420e-a742-0c80dd6cf0e9.png)
+
 
