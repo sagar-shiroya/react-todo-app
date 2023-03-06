@@ -12,6 +12,7 @@ function App() {
     const task = {
       id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
       taskName: newtask,
+      completed: false,
     };
     setTodoList([...todoList, task]);
     setNewTask("");
@@ -25,6 +26,27 @@ function App() {
     //Alternative of above code
     const newTodoList = todoList.filter((task) => task.id !== val);
     setTodoList(newTodoList);
+  };
+
+  const updateTask = (id) => {
+    // const newTodoList = todoList.map((task) => {
+    //   if (task.id === id) {
+    //     return { ...task, completed: true };
+    //   } else {
+    //     return task;
+    //   }
+    // });
+    // console.log(newTodoList);
+    // setTodoList(newTodoList);
+    setTodoList(
+      todoList.map((task) => {
+        if (task.id === id) {
+          return { ...task, completed: true };
+        } else {
+          return task;
+        }
+      })
+    );
   };
 
   return (
@@ -47,7 +69,9 @@ function App() {
               taskName={task.taskName}
               id={task.id}
               key={key}
+              isCompleted={task.completed}
               deleteTask={deleteTask}
+              updateTask={updateTask}
             />
           );
         })}

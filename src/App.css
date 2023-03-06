@@ -82,6 +82,11 @@ input:focus{
   color: #fff;
 }
 
+h2.completed{
+  background: linear-gradient(to right, #6295a4, #368aa1,#0186ab);
+  text-decoration: line-through;
+}
+
 .task button{
   border-style: none;
   font-size: 30px;
@@ -89,7 +94,7 @@ input:focus{
   width: fit-content;
   color: #016c8a;
   font-weight: 800;
-  padding: 0 25px;
+  padding-left:25px;
 }
 
 .footer{
@@ -121,10 +126,6 @@ input:focus{
 li{
   list-style: none;
   font-size:25px;
-}
-
-.task button{
-  margin-left: 15px;
 }
 
 @keyframes App-logo-spin {
